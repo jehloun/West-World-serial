@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>WestWorld</title>
+		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="navigation.css">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="slider.css">
+        <link rel="stylesheet" type="text/css" href="kontakt.css">
+        <link rel="stylesheet" type="text/css" href="animation.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	</head>
+
+<body>
+
+	<header>
+        <nav class="navbar navbar-toggleable-sm navbar-light bg-faded fixed-top">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">WestWorld</a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nav-prvniserie" href="#">1. serie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">2. serie</a>
+                    </li>
+                    <li class="nav-item nav-kontakt">
+                        <a class="nav-link" href="#">kontakt</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="circle"><a class="social" href="#"><img src="facebook.svg"></a></div>
+            <div class="circle"><a class="social" href="#"><img src="instagram.svg"></a></div>
+        </nav>
+	</header>
+
+	<section id="banner">
+        <video autoplay loop id="video-background" muted>
+            <source src="intro.mp4" type="video/mp4">
+        </video>
+
+	</section>
+
+	<section id="carousel">
+        <h2>První epizoda</h2>
+		<div class="carouselContent">
+			<div id="next" onclick="next()"></div>
+			<div id="previous" onclick="prev()"></div>
+			<iframe class="videos animation" src="https://openload.co/embed/sMbAFBZyTdE/" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="true"></iframe>
+		</div>
+
+	</section>
+
+    <section id="kontakt">
+
+        <div class="containerForm">
+            <div id="container">
+                <h1>&bull; Kontaktujte nás &bull;</h1>
+                <div class="underline">
+                </div>
+                <div class="icon_wrapper">
+
+                </div>
+                <form action="#" method="post" id="contact_form">
+                    <div class="name">
+                        <label for="name"></label>
+                        <input type="text" placeholder="Jméno" name="name" id="name_input" required>
+                    </div>
+                    <div class="email">
+                        <label for="email"></label>
+                        <input type="email" placeholder="E-mail" name="email" id="email_input" required>
+                    </div>
+                    <div class="telephone">
+                        <label for="name"></label>
+                        <input type="text" placeholder="Telefoní číslo" name="telephone" id="telephone_input">
+                    </div>
+                    <div class="message">
+                        <label for="message"></label>
+                        <textarea name="message" placeholder="Obsah zprávy" id="message_input" cols="30" rows="5" required></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Odeslat zprávu" id="form_button" />
+                    </div>
+                </form><!-- // End form -->
+            </div><!-- // End #container -->
+        </div>
+
+
+        <div class="copy">Copyright &#0169; Westworld Czech 2016</div>
+    </section>
+
+	<script src="script/nav.js"></script>
+	<script src="script/slider.js"></script>
+	<!-- Tether -->
+	<script src="script/script.js"></script>
+</body>
+
+</html>

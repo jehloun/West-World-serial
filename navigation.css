@@ -1,0 +1,69 @@
+@-ms-viewport { 
+  width: device-width; 
+}
+
+
+
+header .navbar-light .navbar-nav .nav-link:hover{
+    text-decoration: underline;
+    color:white;
+}
+
+header .navbar {
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header .navbar-light .navbar-brand:hover {
+    color:white;
+}
+
+header .navbar-light .navbar-nav .nav-link, header .navbar-light .navbar-brand, .navbar-light .navbar-toggler {
+    color:white;
+}
+
+.circle {
+    display: none;
+}
+
+.social img {
+    height: 25px;
+    width: 25px;
+}
+
+.circle {
+    margin-left: 10px;
+}
+
+
+@media only screen and (min-width: 768px) {  /*na najetí myši na nav se zobrazí*/
+
+    .navbar-nav {
+        float:right;
+        right: 0;
+    }
+
+    .nav-link {
+        margin-left: 30px;
+    }
+
+    .circle {
+        display:block;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) { /*nastavení dropdown menu aby bylo v toku navigace*/
+    #navbarNavDropdown {
+        text-align:center;
+    }
+
+}
+
+
+
+.navscroll {
+    background-color: white;
+}

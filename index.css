@@ -1,0 +1,60 @@
+@-ms-viewport { 
+  width: device-width; 
+}
+
+
+
+body {
+    min-width:600px;
+    overflow-x: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+	#logo span {
+		font-size: 70px;
+}
+}
+
+#video-background {
+    /*  making the video fullscreen  */
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+#banner {
+	background-image: url("logo.jpg");
+	background-attachment:fixed;
+	background-size: cover;
+	background-position:center;
+	align-items:center;
+}
+
+@media only screen and (min-width: 768px) {  /*na najetí myši na nav se zobrazí*/
+
+    #video-background {
+        /*  making the video fullscreen  */
+        display: block;
+    }
+
+}
+
+section {
+    text-align: center;
+}
+
+button {
+	
+}
+
+
+@media only screen and (min-height: 768px) {
+	
+
+}
